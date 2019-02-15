@@ -16,9 +16,9 @@ def new_binatang(request) :
         form = PostForm()
     return render(request, 'binatang/new_binatang.html', {'form': form})
 
-def post_detail(request, post_id):
-    post_num = get_list_or_404(Blog, id=post_id)
-    return render(request, 'binatang/detail_binatang', {'detail_binatang': post_num})
+def detail_binatang(request, binatang_id):
+    detail_binatang = get_list_or_404(Binatang, id=binatang_id)
+    return render(request, 'binatang/detail_binatang.html', {'detail_binatang': detail_binatang})
 
 def thanks(request) :
     return render(request, 'binatang/thanks.html',{})

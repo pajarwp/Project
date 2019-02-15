@@ -1,5 +1,25 @@
 {% extends 'home/base.html' %}
 {% load static %}
 {% block content %}
-{% endfor %}
+
+<body>
+    {% for data in detail_binatang %}
+    <div class="blog margin container">
+        <div class="row px-3 mx-auto">
+            <img src="{{ data.gambar.url}}" class="center imgblog"/>
+        </div>
+        <div class="row px-3 mx-auto">
+            <h2 class="center">{{ data.nama }}</h2>
+        </div>
+        <div class="row px-3 mx-auto">
+                <h2 class="center">{{ data.latin }}</h2>
+        </div>
+        <div class="row px-3 mx-auto">
+            <p class="center">{{ data.deskripsi }}</p>
+        </div>
+        <div class="row px-3 mx-auto">
+            <a href="{% url 'binatang' %}">Kembali ke Zoo</a>
+        </div>
+    </div>
+    {% endfor %}
 {% endblock %}
