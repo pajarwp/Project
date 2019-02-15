@@ -1,0 +1,60 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+        <div class="container-fluid background">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-12" style="box-sizing: border-box" weight="100%" height="100%">
+                    <div class="w3-content">
+                        <img class="mySlides" src="{% static 'images/Copsychus_pyrropygus.jpg' %}" style="width:100%">                  
+                        <img class="mySlides" src="{% static 'images/Argusianus_argus.jpg' %}" style="width:100%">
+                        <img class="mySlides" src="{% static 'images/Beo.jpg' %}" style="width:100%">
+                    </div>
+                
+                    <script>
+                    var slideIndex = 0;
+                    carousel();
+                    
+                    function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none"; 
+                    }
+                    slideIndex++;
+                    if (slideIndex > x.length) {slideIndex = 1} 
+                    x[slideIndex-1].style.display = "block"; 
+                    setTimeout(carousel, 8000); 
+                    }
+                    </script>
+                </div>
+                <div class="col-md-6 col-sm-6 col-12 desc">
+                    <div id="zoois">
+                        <p><b> Zoos are great for many reasons: they work to conserve endangered species, they educate people about animals and the environment, and they provide opportunities for the whole family to spend a fun day together.
+    
+                                The Online Zoo has over 20,000 photos of more than 2,700 species from zoos and aquariums all over North America and a few other places around the world. Unlike most animal photo sites, all of our photos are original; you will not find them anywhere else.
+                                
+                                No website can come close to the experience of visiting a real zoo or aquarium, but zoos can only house a limited number of animals, and there are many, many species you will never see at your local zoo. Hopefully you will see something new during your visit today!</b>
+                        </p>
+                    </div>      
+                </div>    
+            </div>
+            <br/>
+            <hr>
+            <br/>
+            <div class="row px-3 mx-auto center">
+                <div class="col-12 text-center center-block">
+                    <p class="cek"><b>Check Out Our Video!</b></p>
+                </div>
+                <div class="col-12 video center-block" style="margin:0 auto">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hlxRChgl00c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="row px-3 mx-auto center"></iframe>
+                </div>
+            </div>
+            <div class="row backgroundbwh">
+                <div class="col-12 can">
+                    <p class="px-3 mx-auto center text-center"><b>You can contribute in our site</b></p>
+                </div>
+                <div class="col-12 click text-center">
+                    <a href="{% url 'new_binatang' %}" target="_blank" class="row px-3 mx-auto center links click">Click here</a>
+                </div>
+            </div>                         
+{% endblock %}     

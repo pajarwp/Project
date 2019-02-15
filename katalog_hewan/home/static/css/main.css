@@ -1,0 +1,145 @@
+/* .dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: rgb(88, 221, 88);
+}  
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown:hover {
+    background-color: light;
+} */
+.background {
+    background: gray url(../images/wallpaper.jpg) repeat 0 0;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+    -webkit-animation: slide 30s linear infinite;
+    width: 100%;
+    margin: 0%;
+    height: 100%;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-blend-mode: screen;
+}
+
+#session {
+    top:0;
+    padding-top:0;
+    position:relative;
+    margin:0;
+}
+
+@-webkit-keyframes slide {
+    from {background-position: 0 0; }
+    to {background-position: -400px 0; }
+}
+.mySlides {display:none;}
+
+.w3-content {
+    box-sizing:border-box;
+    height: 100px;
+    padding: 10px;
+    margin-top: 50px;
+    border: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#zoois {
+    margin: 0%;
+    padding-top: 50px;
+    justify-content: center;
+    box-sizing:border-box;
+    text-align: justify;
+    font-size: 20px;
+}
+.small {
+    font-size: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.akhir {
+    background-color: rgb(241, 236, 236);
+    font-size: 20px;
+}
+.desc {
+    background-color: rgba(240, 255, 255, 0.733);
+}
+.video {
+    padding-top: 20px;
+    margin: 0px;
+    padding-bottom: 50px
+}
+.center-block {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.cek {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    color: red;
+}
+.backgroundbwh {
+    background: gray url(../images/MG_1229.jpg) repeat 0 0;
+    width: 100%;
+    margin: 0%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+.can {
+    color:white;
+    /* background-color: rgba(255, 0, 0, 0.596); */
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+.links:link, a:visited {
+    background-color: #f44336;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+.links:hover, a:active {
+    background-color: red;
+}
+.dropdown-item {
+    color: black;
+}
+
+.margin {
+    margin-top: 50px;
+}
+
+.blog{
+    max-width: 600px;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgblog{
+    width: 600px;
+}
